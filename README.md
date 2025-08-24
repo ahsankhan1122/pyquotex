@@ -43,51 +43,101 @@ git clone https://github.com/cleitonleonel/pyquotex.git
 cd pyquotex
 poetry install
 poetry run python app.py
-2. Or install directly in your project with Poetry:
-bash
-Copy
-Edit
+
+
+### 2. Ou instale diretamente no seu projeto com Poetry:
+
+```bash
 poetry add git+https://github.com/cleitonleonel/pyquotex.git
-2.1. Install with a single command on Termux (Android):
-shell
-Copy
-Edit
+```
+
+### 2.1. Instale com um comando no Termux (Android):
+
+```shell
 curl -sSL https://raw.githubusercontent.com/cleitonleonel/pyquotex/refs/heads/master/run_in_termux.sh | sh
-3. Additional requirements
-If you encounter an error related to playwright install when using this library, follow the steps below to fix the issue.
+```
 
-Install Playwright browsers
-Make sure Playwright and the compatible browsers are installed.
+### 3. Requisitos adicionais
+Se você encontrar um erro relacionado ao `playwright install` ao usar esta biblioteca, siga os passos abaixo para resolver o problema.
 
+### Instalar navegadores do Playwright
+Certifique-se de que o Playwright e os navegadores compatíveis estejam instalados.
 
+![playwright_info.png](playwright_info.png)
 
-bash
-Copy
-Edit
+```bash
 playwright install
-🧪 Example Usage
-python
-Copy
-Edit
+```
+---
+
+## 🧪 Exemplo de uso
+
+```python
 from pyquotex.stable_api import Quotex
 
 client = Quotex(
   email="your_email",
   password="your_password",
-  lang="en"
+  lang="pt"  # ou "en"
 )
 
 await client.connect()
 print(await client.get_balance())
 await client.close()
-💡 Main Features
-Function	Description
-connect()	Connects via WebSocket with reconnection
-get_balance()	Returns account balance
-buy_simple()	Executes a simple buy operation
-buy_and_check_win()	Buys and checks the result
-get_candle()	Returns historical candles
-get_realtime_sentiment()	Real-time sentiment of the asset
-balance_refill()	Refills demo account
+```
 
+---
 
+## 💡 Recursos Principais
+
+| Função                     | Descrição                              |
+| -------------------------- | -------------------------------------- |
+| `connect()`                | Conecta via WebSocket com reconexão    |
+| `get_balance()`            | Retorna o saldo da conta               |
+| `buy_simple()`             | Realiza uma operação de compra simples |
+| `buy_and_check_win()`      | Compra e verifica o resultado          |
+| `get_candle()`             | Retorna candles históricos             |
+| `get_realtime_sentiment()` | Sentimento em tempo real do ativo      |
+| `balance_refill()`         | Recarrega a conta demo                 |
+
+---
+
+## 🔒 Versão Privada Disponível
+
+Uma versão privada está disponível com recursos adicionais, estabilidade aprimorada e melhor suporte.
+
+👉 [Acesse a versão privada](https://t.me/pyquotex/852) para desbloquear o máximo do PyQuotex!
+
+### 💥 Comparativo de Versões
+
+| Recurso                        | Open Source ✅ | Versão Privada ✨      |
+|--------------------------------| ------------- | --------------------- |
+| Suporte a Multilogin           | ❌             | ✅                     |
+| Monitoramento de Sentimentos   | ✅             | ✅ + detecção avançada |
+| Proxy/DNS Customizado          | ❌             | ✅                     |
+| Robustez e Alta Confiabilidade | ✅             | ✨ Nível enterprise    |
+| Velocidade de Execução         | ✅             | ⚡ Ultra rápido        |
+| Suporte                        | ❌             | ✅                     |
+
+---
+
+## 🤝 Apoie este projeto
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cleiton.leonel)
+
+### 💸 Criptomoedas
+
+* **Dogecoin (DOGE)**: `DMwSPQMk61hq49ChmTMkgyvUGZbVbWZekJ`
+* **Bitcoin (BTC)**: `bc1qtea29xkpyx9jxtp2kc74m83rwh93vjp7nhpgkm`
+* **Ethereum (ETH)**: `0x20d1AD19277CaFddeE4B8f276ae9f3E761523223`
+* **Solana (SOL)**: `4wbE2FVU9x4gVErVSsWwhcdXQnDBrBVQFvbMqaaykcqo`
+
+---
+
+## 📞 Contato
+
+* Telegram: [@cleitonleonel](https://t.me/cleitonleonel)
+* GitHub: [cleitonleonel](https://github.com/cleitonleonel)
+* LinkedIn: [Cleiton Leonel](https://www.linkedin.com/in/cleiton-leonel-creton-331138167/)
+
+---
