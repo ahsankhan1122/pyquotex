@@ -90,36 +90,4 @@ get_candle()	Returns historical candles
 get_realtime_sentiment()	Real-time sentiment of the asset
 balance_refill()	Refills demo account
 
-🔒 Private Version Available
-A private version is available with additional features, improved stability, and better support.
-
-👉 Access the private version to unlock the full potential of PyQuotex!
-
-💥 Version Comparison
-Feature	Open Source ✅	Private Version ✨
-Multi-login Support	❌	✅
-Sentiment Monitoring	✅	✅ + advanced detection
-Custom Proxy/DNS	❌	✅
-Robustness & High Reliability	✅	✨ Enterprise level
-Execution Speed	✅	⚡ Ultra fast
-Support	❌	✅
-
-🤝 Support this Project
-
-
-💸 Cryptocurrencies
-Dogecoin (DOGE): DMwSPQMk61hq49ChmTMkgyvUGZbVbWZekJ
-
-Bitcoin (BTC): bc1qtea29xkpyx9jxtp2kc74m83rwh93vjp7nhpgkm
-
-Ethereum (ETH): 0x20d1AD19277CaFddeE4B8f276ae9f3E761523223
-
-Solana (SOL): 4wbE2FVU9x4gVErVSsWwhcdXQnDBrBVQFvbMqaaykcqo
-
-📞 Contact
-Telegram: @cleitonleonel
-
-GitHub: cleitonleonel
-
-LinkedIn: Cleiton Leonel
 
