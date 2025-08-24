@@ -15,40 +15,35 @@
 
 ---
 
-## 📘 Sobre o projeto (PT-BR)
+## 📘 About the Project
 
-O **PyQuotex** nasceu como uma biblioteca open-source para facilitar a comunicação com a plataforma Quotex via WebSockets. Com o tempo e devido ao uso indevido, uma versão privada mais segura e robusta foi criada.
-
----
-
-## 📘 About the Project (EN)
-
-**PyQuotex** started as an open-source library to make it easier to communicate with the Quotex platform using WebSockets. Due to misuse, a more robust private version was later introduced.
+**PyQuotex** was created as an open-source library to make communication with the Quotex platform via WebSockets easier. Over time, and due to misuse, a safer and more robust private version was created.
 
 ---
 
-## 🎯 Objetivo da Biblioteca / Library Goal
+## 🎯 Library Goal
 
-Prover ferramentas para desenvolvedores integrarem seus sistemas com a plataforma Quotex, permitindo operações automatizadas de forma segura e eficiente.
+Provide tools for developers to integrate their systems with the Quotex platform, allowing automated operations in a safe and efficient way.
 
-> ⚠️ Esta biblioteca **não é um robô de operações** e não toma decisões por conta própria.
+> ⚠️ This library **is not a trading bot** and does not make decisions on its own.
 
 ---
 
-# 📚 Documentação Completa
+# 📚 Full Documentation
 https://cleitonleonel.github.io/pyquotex/
 
+---
 
-## 🛠 Instalação
+## 🛠 Installation
 
-### 1. Clone o repositório:
+### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/cleitonleonel/pyquotex.git
 cd pyquotex
 poetry install
 poetry run python app.py
-```
+
 
 ### 2. Ou instale diretamente no seu projeto com Poetry:
 
