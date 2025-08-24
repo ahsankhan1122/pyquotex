@@ -43,101 +43,83 @@ git clone https://github.com/cleitonleonel/pyquotex.git
 cd pyquotex
 poetry install
 poetry run python app.py
-
-
-### 2. Ou instale diretamente no seu projeto com Poetry:
-
-```bash
+2. Or install directly in your project with Poetry:
+bash
+Copy
+Edit
 poetry add git+https://github.com/cleitonleonel/pyquotex.git
-```
-
-### 2.1. Instale com um comando no Termux (Android):
-
-```shell
+2.1. Install with a single command on Termux (Android):
+shell
+Copy
+Edit
 curl -sSL https://raw.githubusercontent.com/cleitonleonel/pyquotex/refs/heads/master/run_in_termux.sh | sh
-```
+3. Additional requirements
+If you encounter an error related to playwright install when using this library, follow the steps below to fix the issue.
 
-### 3. Requisitos adicionais
-Se você encontrar um erro relacionado ao `playwright install` ao usar esta biblioteca, siga os passos abaixo para resolver o problema.
+Install Playwright browsers
+Make sure Playwright and the compatible browsers are installed.
 
-### Instalar navegadores do Playwright
-Certifique-se de que o Playwright e os navegadores compatíveis estejam instalados.
 
-![playwright_info.png](playwright_info.png)
 
-```bash
+bash
+Copy
+Edit
 playwright install
-```
----
-
-## 🧪 Exemplo de uso
-
-```python
+🧪 Example Usage
+python
+Copy
+Edit
 from pyquotex.stable_api import Quotex
 
 client = Quotex(
   email="your_email",
   password="your_password",
-  lang="pt"  # ou "en"
+  lang="en"
 )
 
 await client.connect()
 print(await client.get_balance())
 await client.close()
-```
+💡 Main Features
+Function	Description
+connect()	Connects via WebSocket with reconnection
+get_balance()	Returns account balance
+buy_simple()	Executes a simple buy operation
+buy_and_check_win()	Buys and checks the result
+get_candle()	Returns historical candles
+get_realtime_sentiment()	Real-time sentiment of the asset
+balance_refill()	Refills demo account
 
----
+🔒 Private Version Available
+A private version is available with additional features, improved stability, and better support.
 
-## 💡 Recursos Principais
+👉 Access the private version to unlock the full potential of PyQuotex!
 
-| Função                     | Descrição                              |
-| -------------------------- | -------------------------------------- |
-| `connect()`                | Conecta via WebSocket com reconexão    |
-| `get_balance()`            | Retorna o saldo da conta               |
-| `buy_simple()`             | Realiza uma operação de compra simples |
-| `buy_and_check_win()`      | Compra e verifica o resultado          |
-| `get_candle()`             | Retorna candles históricos             |
-| `get_realtime_sentiment()` | Sentimento em tempo real do ativo      |
-| `balance_refill()`         | Recarrega a conta demo                 |
+💥 Version Comparison
+Feature	Open Source ✅	Private Version ✨
+Multi-login Support	❌	✅
+Sentiment Monitoring	✅	✅ + advanced detection
+Custom Proxy/DNS	❌	✅
+Robustness & High Reliability	✅	✨ Enterprise level
+Execution Speed	✅	⚡ Ultra fast
+Support	❌	✅
 
----
+🤝 Support this Project
 
-## 🔒 Versão Privada Disponível
 
-Uma versão privada está disponível com recursos adicionais, estabilidade aprimorada e melhor suporte.
+💸 Cryptocurrencies
+Dogecoin (DOGE): DMwSPQMk61hq49ChmTMkgyvUGZbVbWZekJ
 
-👉 [Acesse a versão privada](https://t.me/pyquotex/852) para desbloquear o máximo do PyQuotex!
+Bitcoin (BTC): bc1qtea29xkpyx9jxtp2kc74m83rwh93vjp7nhpgkm
 
-### 💥 Comparativo de Versões
+Ethereum (ETH): 0x20d1AD19277CaFddeE4B8f276ae9f3E761523223
 
-| Recurso                        | Open Source ✅ | Versão Privada ✨      |
-|--------------------------------| ------------- | --------------------- |
-| Suporte a Multilogin           | ❌             | ✅                     |
-| Monitoramento de Sentimentos   | ✅             | ✅ + detecção avançada |
-| Proxy/DNS Customizado          | ❌             | ✅                     |
-| Robustez e Alta Confiabilidade | ✅             | ✨ Nível enterprise    |
-| Velocidade de Execução         | ✅             | ⚡ Ultra rápido        |
-| Suporte                        | ❌             | ✅                     |
+Solana (SOL): 4wbE2FVU9x4gVErVSsWwhcdXQnDBrBVQFvbMqaaykcqo
 
----
+📞 Contact
+Telegram: @cleitonleonel
 
-## 🤝 Apoie este projeto
+GitHub: cleitonleonel
 
-[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cleiton.leonel)
+LinkedIn: Cleiton Leonel
 
-### 💸 Criptomoedas
-
-* **Dogecoin (DOGE)**: `DMwSPQMk61hq49ChmTMkgyvUGZbVbWZekJ`
-* **Bitcoin (BTC)**: `bc1qtea29xkpyx9jxtp2kc74m83rwh93vjp7nhpgkm`
-* **Ethereum (ETH)**: `0x20d1AD19277CaFddeE4B8f276ae9f3E761523223`
-* **Solana (SOL)**: `4wbE2FVU9x4gVErVSsWwhcdXQnDBrBVQFvbMqaaykcqo`
-
----
-
-## 📞 Contato
-
-* Telegram: [@cleitonleonel](https://t.me/cleitonleonel)
-* GitHub: [cleitonleonel](https://github.com/cleitonleonel)
-* LinkedIn: [Cleiton Leonel](https://www.linkedin.com/in/cleiton-leonel-creton-331138167/)
-
----
